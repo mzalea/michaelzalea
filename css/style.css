@@ -1,0 +1,98 @@
+body{
+	background-color: #F6F6F6;
+    color:#5E5E63;
+	font-size:18px;
+	font-family: "Karla";
+}
+
+.nav-full {
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	align-items: center;
+	justify-content: space-between;
+	padding: 36px 64px 0px 64px;
+}
+
+.nav-left {
+	display: flex;
+	align-items: center;
+}
+
+.nav-right {
+	display: flex;
+	align-items: center;
+}
+
+#navobject-hire{
+	background-color: #ECF0F1;
+	padding: 5px 12px 5px 12px;
+	margin-right: 24px;
+	border: 0;
+	border-width: 0px;
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 4px;
+}
+
+#navobject-mail{
+	background-color: #ECF0F1;
+	padding: 12px;
+	border: 0;
+	border-width: 0px;
+	border-radius: 100px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 4px;
+}
+
+.full-width{
+	display: flex;
+	justify-content: center;
+	padding-left: 96px;
+	padding-right: 96px;
+}
+
+.showcase {
+	margin-top: 192px;
+}
+
+.main-header{
+	font-size:68px;
+	font-family: "Inter";
+	font-weight: 400;
+	text-align: center;
+	margin: 0px;
+}
+
+.location-flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 48px;
+	margin-bottom: 48px;
+}
+
+#house-icon{
+	margin-right: 6px;
+}
+
+.bold-text{
+	font-weight: bold;
+}
+
+.subtitle{
+	margin: 0px;
+	margin-bottom: 120px;
+	line-height: 150%;
+	text-align: center;
+}
+
+.tools-display{
+	background-color: #ECF0F1;
+	width: 740px;
+	height: 1000px;
+	margin: auto;
+	border-radius: 20px;
+	box-shadow: inset rgba(0, 0, 0, 0.15) 0px 0px 4px;
+}
