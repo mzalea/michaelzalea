@@ -8,13 +8,16 @@ body{
 .nav-full {
 	display: flex;
 	position: fixed;
-	top: 0;
+	top: 32px;
 	left: 0;
 	right: 0;
-
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
 	align-items: center;
 	justify-content: space-between;
-	padding: 36px 64px 0px 64px;
+	padding-left: 64px;
+	padding-right: 64px;
 }
 
 .nav-left {
@@ -29,12 +32,22 @@ body{
 
 #navobject-hire{
 	background-color: #ECF0F1;
-	padding: 5px 12px 5px 12px;
-	margin-right: 24px;
+	padding: 4px 8px 4px 8px;
+	margin-right: 16px;
 	border: 0;
 	border-width: 0px;
 	border-radius: 20px;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 4px;
+}
+
+#navobject-hire-mobile{
+	background-color: #ECF0F1;
+	padding: 4px 8px 4px 8px;
+	border: 0;
+	border-width: 0px;
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 4px;
+	display: none;
 }
 
 #navobject-mail{
@@ -49,12 +62,10 @@ body{
 .full-width{
 	display: flex;
 	justify-content: center;
-	padding-left: 96px;
-	padding-right: 96px;
 }
 
 .showcase {
-	margin-top: 192px;
+	margin-top: 216px;
 }
 
 .main-header{
@@ -69,11 +80,11 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 48px;
-	margin-bottom: 48px;
+	margin-top: 32px;
+	margin-bottom: 38px;
 }
 
-#house-icon{
+#house-icon{                                 
 	margin-right: 6px;
 }
 
@@ -83,16 +94,74 @@ body{
 
 .subtitle{
 	margin: 0px;
-	margin-bottom: 120px;
+	margin-bottom: 132px;
 	line-height: 150%;
 	text-align: center;
 }
 
-.tools-display{
-	background-color: #ECF0F1;
-	width: 740px;
-	height: 1000px;
-	margin: auto;
-	border-radius: 20px;
-	box-shadow: inset rgba(0, 0, 0, 0.15) 0px 0px 4px;
+/*Mobile/Small*/
+@media (max-width:  499px) {
+	#navobject-hire {
+		display: none;
+	}
+	#navobject-hire-mobile {
+		display: block;
+	}
+	.nav-full{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.full-width{
+		padding-left: 28px;
+		padding-right: 28px;
+	}
+	.main-header{
+		font-size: 35px;
+	}
+}
+
+/* Mobile/Tablet */
+@media (min-width: 500px) {
+
+	.nav-full{
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+	.full-width{
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+
+	.main-header{
+		font-size: 42px;
+	}
+}
+
+/* Tablet/SmallDesktop */
+@media (min-width: 600px) {
+
+	.full-width{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.main-header{
+		font-size: 64px;
+	}
+
+}
+
+/* Desktop+ */
+@media (min-width: 1000px) {
+
+	body{
+		font-size: 20px;
+	}
+
+	.main-header{
+		font-size: 72px;
+	}
+
 }
