@@ -30,6 +30,7 @@ body{
 	align-items: center;
 }
 
+
 #navobject-hire{
 	background-color: #ECF0F1;
 	padding: 4px 8px 4px 8px;
@@ -42,19 +43,35 @@ body{
 
 #navobject-hire-mobile{
 	background-color: #ECF0F1;
-	padding: 4px 8px 4px 8px;
+	padding: 4px 6px 4px 6px;
 	border: 0;
-	border-width: 0px;
 	border-radius: 20px;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 4px;
 	display: none;
 }
 
+#face-icon{
+	clip-path: circle(32px at center);
+}
+
 #navobject-mail{
 	background-color: #ECF0F1;
-	padding: 12px;
 	border: 0;
-	border-width: 0px;
+	width: 64px;
+	height: 64px;
+	border-radius: 100px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 4px;
+}
+
+#face-icon{
+	clip-path: circle(32px at center);
+}
+
+#navobject-face{
+	background-color: #ECF0F1;
+	border: 0;
+	width: 64px;
+	height: 64px;
 	border-radius: 100px;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 4px;
 }
