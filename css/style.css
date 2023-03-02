@@ -59,7 +59,7 @@ body{
 	border: 0;
 	width: 64px;
 	height: 64px;
-	border-radius: 100px;
+	border-radius: 100%;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 4px;
 }
 
@@ -74,11 +74,6 @@ body{
 	height: 64px;
 	border-radius: 100px;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 4px;
-}
-
-.full-width{
-	display: flex;
-	justify-content: center;
 }
 
 .showcase {
@@ -115,6 +110,80 @@ body{
 	line-height: 150%;
 	text-align: center;
 }
+
+.project-showcase{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 132px;
+}
+
+
+.project-card{
+	background-color: #ECF0F1;
+	width: 829px;
+	height: 328px;
+	border-radius: 20px;
+	box-shadow: inset rgba(0, 0, 0, 0.15) 0px 0px 4px;
+	margin-bottom: 80px;
+}
+
+h1{
+	font-family: "Inter";
+	margin: 0;
+	font-size: 36px;
+}
+
+.contact-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 200px;
+}
+
+.contact-info{
+	margin-top: 64px;
+}
+
+.arrow{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: right;
+	margin-right: 0;
+}
+
+#arrowstick{
+	height: 4px;
+	width: 300px;
+	background-color: #5E5E63;
+}
+
+#arrowhead{
+	height: 0px;
+	width: 0px;
+	border-top: 12px solid transparent;
+	border-left: 24px solid #5E5E63;
+	border-bottom: 12px solid transparent;
+}
+
+
+.contact-links{
+	margin: 0px;
+	margin-bottom: 132px;
+	line-height: 150%;
+	text-align: left;
+}
+
+.contact-form{
+	background-color: #ECF0F1;
+	width: 508px;
+	height: 328px;
+	border-radius: 20px;
+	box-shadow: inset rgba(0, 0, 0, 0.15) 0px 0px 4px;
+}
+
 
 /*Mobile/Small*/
 @media (max-width:  499px) {
