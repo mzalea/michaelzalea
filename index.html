@@ -14,14 +14,14 @@
 		<nav class="navbar">
 			<div class="nav-full">
 				<div class="nav-left">
-					<a id="navobject-face" tabIndex=0 > <img src="images/smile.png" id=face-icon loading="lazy" width="64" height="64" alt="Michael's face"></a>
+					<a href="#top" id="navobject-face" tabIndex=0 > <img src="images/smile.png" id=face-icon loading="lazy" width="64" height="64" alt="Michael's face"></a>
 				</div>
 				
-				<a id="navobject-hire-mobile">Available for hire</a>
+				<a href="#contact" id="navobject-hire-mobile" style="text-decoration:none">Available for hire</a>
 				
 				<div class="nav-right">
-					<a id="navobject-hire" tabIndex=0>Available for hire</a>
-					<a id="navobject-mail" tabIndex=0><img src="images/mailbox.png" id=mailbox-icon loading="lazy" width="64" height="64" alt="Mailbox emoji"> </a>
+					<a href="#contact" id="navobject-hire" tabIndex=0 style="text-decoration:none">Available for hire</a>
+					<a href="mailto:michaelzalea@gmail.com" id="navobject-mail" tabIndex=0><img src="images/mailbox.png" id=mailbox-icon loading="lazy" width="64" height="64" alt="Mailbox emoji"> </a>
 				</div>
 			</div>
 		</nav>
@@ -41,29 +41,45 @@
 			<div class="project-card">
 
 			</div>
+			<div class="project-card">
+
+			</div>
+			<div class="project-card">
+
+			</div>
 		</section>
 
 		<section class="contact-container">
-			<div class="contact-info">
+			<div class="contact-info" id="contact">
 				<h1>Let's get in touch.</h1>
 				<div class="arrow">
 					<div id="arrowstick"></div><div id="arrowhead"></div>
 				</div>
 				<div class="contact-links">
-					<div class="contactlink-flex">
-						<img src="images/gmail.png" class=inline-icon loading="lazy" width="20" height="20" alt="Email emoji">
-						<div class="bold-text">michaelzalea@gmail.com</div>
-					</div>
-					<div class="contactlink-flex">
-						<img src="images/github.png" class=inline-icon loading="lazy" width="20" height="20" alt="Github emoji">
-						<div class="bold-text">github.com/mzalea/</div>
-					</div>
+					<a href="http://github.com/mzalea/" target="_blank" style="text-decoration:none" >
+						<div class="contactlink-flex">
+							<img src="images/github.png" class=inline-icon loading="lazy" width="20" height="20" alt="Github logo">
+							<div>github.com/mzalea</div>
+						</div>
+					</a>
+					<a href="http://linkedin.com/in/mzalea/" target="_blank" style="text-decoration:none">
+						<div class="contactlink-flex">
+							<img src="images/linkedin.png" class=inline-icon loading="lazy" width="20" height="20" alt="LinkedIn logo">
+							<div>linkedin.com/in/mzalea</div>
+						</div>
+					</a>
+					<a href="mailto:michaelzalea@gmail.com" style="text-decoration:none">
+						<div class="contactlink-flex">
+							<img src="images/gmail.png" class=inline-icon loading="lazy" width="20" height="20" alt="Email emoji">
+							<div>michaelzalea@gmail.com</div>
+						</div>
+					</a>
 				</div>
 			</div>
 
 			<div class="contact-form-container">
 				<form action="">
-					<input name="name" type="text" class="form-input-text" placeholder="Your Name">
+					<input name="name" label="test" type="text" class="form-input-text" placeholder="Your Name">
 					<input name="email" type="email" class="form-input-text" placeholder="Your Email">
 					<textarea name="message" id="form-message" placeholder="Message"></textarea>
 					<input type="submit" value="Send">

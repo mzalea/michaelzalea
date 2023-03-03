@@ -31,8 +31,9 @@ body{
 }
 
 
-#navobject-hire{
+#navobject-hire, #navobject-hire-mobile{
 	background-color: #ECF0F1;
+	color: #5E5E63;
 	padding: 4px 8px 4px 8px;
 	margin-right: 16px;
 	border: 0;
@@ -42,11 +43,7 @@ body{
 }
 
 #navobject-hire-mobile{
-	background-color: #ECF0F1;
 	padding: 4px 6px 4px 6px;
-	border: 0;
-	border-radius: 20px;
-	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 4px;
 	display: none;
 }
 
@@ -121,7 +118,7 @@ body{
 
 .project-card{
 	background-color: #ECF0F1;
-	width: 829px;
+	width: 480px;
 	height: 328px;
 	border-radius: 20px;
 	box-shadow: inset rgba(0, 0, 0, 0.15) 0px 0px 4px;
@@ -136,23 +133,24 @@ h1{
 
 .contact-container {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 80px;
 }
 
 .contact-info{
-	margin-top: 48px;
 	width: 414px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 32px;
 }
 
 .arrow{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: right;
-	margin-right: 0;
+	margin-bottom: 16px;
 }
 
 #arrowstick{
@@ -164,22 +162,18 @@ h1{
 #arrowhead{
 	height: 0px;
 	width: 0px;
-	border-top: 12px solid transparent;
-	border-left: 24px solid #5E5E63;
-	border-bottom: 12px solid transparent;
+}
+
+.contact-links{
+	line-height: 150%;
+	text-align: left;
 }
 
 .contactlink-flex{
 	display: flex;
 	justify-content: left;
 	align-items: center;
-}
-
-.contact-links{
-	margin: 0px;
-	margin-bottom: 132px;
-	line-height: 150%;
-	text-align: left;
+	color:#5E5E63;
 }
 
 .contact-form-container{
@@ -228,7 +222,6 @@ h1{
 	color: #F6F6F6;
 }
 
-
 footer{
 	text-align: center;
 	font-size: 16px;
@@ -254,6 +247,28 @@ footer{
 	.main-header{
 		font-size: 35px;
 	}
+
+	h1{
+		font-size:34px;
+	}
+
+	.project-card{
+		width: 300px;
+	}
+
+	.contact-info{
+		width: 300px;
+		display: block;
+	}
+
+	.contact-form-container{
+		width: 300px;
+	}
+
+	.form-input-text, #form-message{
+		width: 240px;
+	}
+
 }
 
 /* Mobile/Tablet */
@@ -272,6 +287,8 @@ footer{
 	.main-header{
 		font-size: 42px;
 	}
+
+
 }
 
 /* Tablet/SmallDesktop */
@@ -285,11 +302,10 @@ footer{
 	.main-header{
 		font-size: 64px;
 	}
-
 }
 
 /* Desktop+ */
-@media (min-width: 1000px) {
+@media (min-width: 920px) {
 
 	body{
 		font-size: 20px;
@@ -297,6 +313,39 @@ footer{
 
 	.main-header{
 		font-size: 72px;
+	}
+
+	.contact-container {
+		flex-direction: row;
+	}
+
+	.contact-links{
+		margin-bottom: 132px;
+	}
+
+	.project-card{
+		width: 829px;
+	}
+
+	.contact-info{
+		width: 414px;
+		display: block;
+		align-items: center;
+		margin-bottom: 32px;
+	}
+
+	#arrowstick{
+		height: 4px;
+		width: 100%;
+		background-color: #5E5E63;
+	}
+
+	#arrowhead{
+		height: 0px;
+		width: 0px;
+		border-top: 12px solid transparent;
+		border-left: 24px solid #5E5E63;
+		border-bottom: 12px solid transparent;
 	}
 
 }
