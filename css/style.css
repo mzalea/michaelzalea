@@ -96,7 +96,7 @@ body{
 	margin-bottom: 38px;
 }
 
-#house-icon{                                 
+.inline-icon{                                 
 	margin-right: 6px;
 }
 
@@ -139,11 +139,12 @@ h1{
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding-bottom: 200px;
+	margin-bottom: 80px;
 }
 
 .contact-info{
-	margin-top: 64px;
+	margin-top: 48px;
+	width: 414px;
 }
 
 .arrow{
@@ -156,7 +157,7 @@ h1{
 
 #arrowstick{
 	height: 4px;
-	width: 300px;
+	width: 100%;
 	background-color: #5E5E63;
 }
 
@@ -168,6 +169,11 @@ h1{
 	border-bottom: 12px solid transparent;
 }
 
+.contactlink-flex{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
 
 .contact-links{
 	margin: 0px;
@@ -176,14 +182,57 @@ h1{
 	text-align: left;
 }
 
-.contact-form{
+.contact-form-container{
+	text-align: center;
 	background-color: #ECF0F1;
-	width: 508px;
-	height: 328px;
+	width: 415px;
+	height: 296px;
 	border-radius: 20px;
+	padding: 24px 0px 8px 0px;
 	box-shadow: inset rgba(0, 0, 0, 0.15) 0px 0px 4px;
 }
 
+.form-input-text, #form-message{
+	font-family: "Karla";
+	font-size: 18px;
+	color: #5E5E63;
+	font-weight: bold;
+	width: 336px;
+	height: 16px;
+	border-radius: 20px;
+	padding: 8px 16px 8px 16px;
+	margin-top: 12px;
+	border:none;
+}
+
+#form-message{
+	height: 134px;
+	overflow: auto;
+	resize: none;
+}
+
+[type="submit"]{
+	font-family: "Karla";
+	font-size: 18px;
+	color: #5E5E63;
+	background-color: #fff;
+	padding: 4px 16px 4px 16px;
+	margin-top: 12px;
+	border: 0;
+	border-width: 0px;
+	border-radius: 20px;
+}
+
+[type="submit"]:hover{
+	background-color: #5E5E63;
+	color: #F6F6F6;
+}
+
+
+footer{
+	text-align: center;
+	font-size: 16px;
+}
 
 /*Mobile/Small*/
 @media (max-width:  499px) {

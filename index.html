@@ -29,7 +29,7 @@
 		<section class="showcase">
 			<h1 class="main-header">Hello there, I'm<br>Michael Zalea</h1>
 			<div class="location-flex">
-				<img src="images/house.png" id=house-icon loading="lazy" width="20" height="20" alt="Home emoji">
+				<img src="images/house.png" class=inline-icon loading="lazy" width="20" height="20" alt="Home emoji">
 				<div class="bold-text">Olympia, WA</div>
 			</div>
 			<div class="subtitle">
@@ -41,12 +41,6 @@
 			<div class="project-card">
 
 			</div>
-			<div class="project-card">
-				
-			</div>
-			<div class="project-card">
-				
-			</div>
 		</section>
 
 		<section class="contact-container">
@@ -56,17 +50,30 @@
 					<div id="arrowstick"></div><div id="arrowhead"></div>
 				</div>
 				<div class="contact-links">
-					<img src="images/house.png" id=house-icon loading="lazy" width="20" height="20" alt="Home emoji">
-					michaelzalea@gmail.com<br>
-					<img src="images/house.png" id=house-icon loading="lazy" width="20" height="20" alt="Home emoji">
-					github.com/mzalea/
+					<div class="contactlink-flex">
+						<img src="images/gmail.png" class=inline-icon loading="lazy" width="20" height="20" alt="Email emoji">
+						<div class="bold-text">michaelzalea@gmail.com</div>
+					</div>
+					<div class="contactlink-flex">
+						<img src="images/github.png" class=inline-icon loading="lazy" width="20" height="20" alt="Github emoji">
+						<div class="bold-text">github.com/mzalea/</div>
+					</div>
 				</div>
 			</div>
 
-			<div class="contact-form">
-			
+			<div class="contact-form-container">
+				<form action="">
+					<input name="name" type="text" class="form-input-text" placeholder="Your Name">
+					<input name="email" type="email" class="form-input-text" placeholder="Your Email">
+					<textarea name="message" id="form-message" placeholder="Message"></textarea>
+					<input type="submit" value="Send">
+				  </form>
 			</div>
 		</section>
+
+		<footer>
+			<p>&copy2023, Michael Zalea. Built with HTML, CSS, and JavaScript</p>
+		</footer> 
 
 
 	</body>
