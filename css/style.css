@@ -108,6 +108,48 @@ body{
 	text-align: center;
 }
 
+h2 {
+	font-family: "Inter";
+    color:#5E5E63;
+	font-size:18px;
+	font-weight: 400;
+	text-align: center;
+	padding-top: 24px;
+	padding-bottom: 24px;;
+	margin: 0;
+}
+
+.tool-showcase{
+	margin: auto;
+	background-color: #ECF0F1;
+	width: 480px;
+	height: 204px;
+	border-radius: 20px;
+	box-shadow: inset rgba(0, 0, 0, 0.15) 0px 0px 4px;
+}
+
+.tool-list{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+figure{
+	text-align: center;
+	font-size: 14px;
+	margin: 0;
+}
+
+.tool-graphic{
+	background-color: #fefefe;
+	height: 64px;
+	width: 64px;
+	border-radius: 20px;
+	box-shadow: inset rgba(0, 0, 0, 0.15) 0px 0px 4px;
+	margin-bottom: 6px;
+}
+
+
 .project-showcase{
 	display: flex;
 	flex-direction: column;
@@ -252,7 +294,7 @@ footer{
 		font-size:34px;
 	}
 
-	.project-card{
+	.project-card, .tool-showcase{
 		width: 300px;
 	}
 
@@ -315,16 +357,20 @@ footer{
 		font-size: 72px;
 	}
 
+	.project-card, .tool-showcase{
+		width: 829px;
+	}
+
+	h2{
+		font-size: 20px;
+	}
+
 	.contact-container {
 		flex-direction: row;
 	}
 
 	.contact-links{
 		margin-bottom: 132px;
-	}
-
-	.project-card{
-		width: 829px;
 	}
 
 	.contact-info{
